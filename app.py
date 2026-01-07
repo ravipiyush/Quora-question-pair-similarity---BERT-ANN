@@ -1,3 +1,6 @@
+import os
+os.environ["TRANSFORMERS_NO_TF"] = "1"
+
 import streamlit as st
 import numpy as np
 import pickle
@@ -109,4 +112,5 @@ st.markdown(
     "<p style='text-align:center;color:gray;'>Made with ❤️ using Streamlit</p>",
     unsafe_allow_html=True
 )
+
 
