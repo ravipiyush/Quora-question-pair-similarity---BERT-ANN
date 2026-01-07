@@ -37,7 +37,8 @@ st.markdown("""
 # ---------------- LOAD MODELS (CACHED) ----------------
 @st.cache_resource
 def load_all_models():
-    bert = SentenceTransformer("all-mpnet-base-v2")
+    bert = SentenceTransformer("all-MiniLM-L6-v2")
+
     model = load_model("bert_ann.h5")
     scaler = pickle.load(open("scaler.pkl", "rb"))
     return bert, model, scaler
@@ -112,5 +113,6 @@ st.markdown(
     "<p style='text-align:center;color:gray;'>Made with ❤️ using Streamlit</p>",
     unsafe_allow_html=True
 )
+
 
 
