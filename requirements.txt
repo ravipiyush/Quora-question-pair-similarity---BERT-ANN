@@ -1,13 +1,6 @@
 streamlit
 numpy
-pandas
 scikit-learn
-
-# NLP (PyTorch only)
 torch
 transformers==4.36.2
 sentence-transformers==2.6.1
-
-# Loading trained ANN
-tensorflow-cpu==2.15.0
-tf-keras==2.15.0
