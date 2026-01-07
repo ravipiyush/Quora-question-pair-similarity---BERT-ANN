@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+tensorflow
+torch
+transformers
+sentence-transformers
+streamlit
